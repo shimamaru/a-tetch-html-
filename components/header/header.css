@@ -1,13 +1,36 @@
 header {
-  background-color: #f8f9fa;
-  height: 60px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
 }
-
-header h1 {
-  margin: 0;
+header .header__inner {
+  height: 90px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+header .header__inner .header__logo img {
+  width: 192px;
+}
+header .header__inner .header__nav .header__list {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__inner .header__nav .header__list a {
+  text-decoration: none;
+}
+header .header__inner .header__nav .header__list .header__item {
+  list-style: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 50px;
+  padding: 15px 0px;
+}
+header .header__inner .header__nav .header__list .header__item__info {
+  color: #fff;
+  background-color: #133979;
+  border-radius: 7px;
+  padding: 15px 40px;
 }
 
 /*# sourceMappingURL=header.css.map */
