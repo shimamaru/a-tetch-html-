@@ -7,9 +7,9 @@ function readContent(filePath) {
 }
 
 // Read header, body, and footer
-const headerHtml = readContent("./components/header/index.html");
+const headerHtml = readContent("./components/header/header.html");
 const body = readContent("./index.html");
-const footerHtml = readContent("./components/footer/index.html");
+const footerHtml = readContent("./components/footer/footer.html");
 
 // Combine all parts
 const html = body
@@ -18,4 +18,4 @@ const html = body
   .replace("</body>", `${footerHtml}\n</body>`);
 
 // Write back to index.html
-fs.writeFileSync(path.join(__dirname, "/index.html"), html);
+fs.writeFileSync(path.join(__dirname, "./index.html"), html);
