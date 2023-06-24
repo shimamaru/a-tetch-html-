@@ -7,14 +7,15 @@ function readContent(filePath) {
 }
 
 // Read header, body, and footer
-const header = readContent("./components/header.html");
-const body = readContent("/index.html");
-const footer = readContent("./components/footer.html");
+const headerHtml = readContent("./components/header/index.html");
+const body = readContent("./index.html");
+const footerHtml = readContent("./components/footer/index.html");
 
 // Combine all parts
 const html = body
-  .replace("<body>", `<body>\n${header}`)
-  .replace("</body>", `${footer}\n</body>`);
+  .replace("<head>", `<head>\n<style>\n${headerCss}\n${footerCss}\n</style>`)
+  .replace("<body>", `<body>\n${headerHtml}`)
+  .replace("</body>", `${footerHtml}\n</body>`);
 
 // Write back to index.html
 fs.writeFileSync(path.join(__dirname, "/index.html"), html);
