@@ -3,10 +3,13 @@
 header {
   position: fixed;
   width: 100%;
-  background-color: $white_smoke;
+  background-color: $white;
 
   .header__inner {
     height: 90px;
+    @media (max-width: $breakpoint-lg) {
+      height: 60px;
+    }
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -17,13 +20,46 @@ header {
       }
     }
 
-    /* PC版のスタイル */
+    // .pc-header {
+    //   display: block;
+
+    //   @media (min-width: $breakpoint-lg) {
+    //     display: none;
+    //   }
+    // }
+
+    //プライバシーポリシーのスタイル
+    .header__item__privacy {
+      display: none;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      .header__item__privacy {
+        display: block;
+      }
+    }
+
+    /* spのスタイル */
     .header__list {
-      @media (max-width: $breakpoint-md) {
+      @media (max-width: $breakpoint-lg) {
         flex-direction: column;
+        margin-top: 60px;
+        padding: 0px;
+        height: 100vh;
+
+        .header__item {
+          font-size: $fontsize-m;
+        }
+
+        a {
+          margin: 20px 0;
+          &:nth-child(1) {
+            margin-top: 75px;
+          }
+        }
       }
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
 
       a {
         text-decoration: none;
@@ -32,10 +68,15 @@ header {
       .header__item {
         list-style: none;
         color: #000;
-        font-size: 13px;
+
+        font-size: $fontsize-m;
         font-weight: bold;
         margin-right: 50px;
         padding: 15px 0px;
+        @media (max-width: $breakpoint-lg) {
+          padding: 0px;
+          color: $white;
+        }
       }
 
       .header__item__info {
@@ -43,26 +84,37 @@ header {
         background-color: $blue;
         border-radius: 7px;
         padding: 15px 40px;
+        @media (max-width: $breakpoint-lg) {
+          padding: 0;
+          color: $black;
+          padding: 20px 0;
+          width: 400px;
+          margin: 0 auto;
+          background: $white;
+        }
       }
     }
 
     //ハンバーガーメニューのスタイル
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-lg) {
       .hamburger {
         display: none;
       }
     }
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       .hamburger {
+        color: $white;
+        background: $blue;
         display: block;
         position: fixed;
         z-index: 3;
-        right: 13px;
-        top: 12px;
-        width: 42px;
-        height: 42px;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
         cursor: pointer;
         text-align: center;
+        // background: transparent;
 
         span {
           display: block;
@@ -70,32 +122,37 @@ header {
           width: 30px;
           height: 2px;
           left: 6px;
-          background: red;
+          background: $white;
           transition: 0.3s ease-in-out;
 
           &:nth-child(1) {
             top: 10px;
+            left: 15px;
           }
           &:nth-child(2) {
             top: 20px;
+            left: 15px;
           }
           &:nth-child(3) {
             top: 30px;
+            left: 15px;
           }
         }
 
         &.active span:nth-child(1) {
-          top: 16px;
-          left: 6px;
+          top: 20px;
+          // left: 6px;
           background: #fff;
           transform: rotate(-45deg);
+          left: 15px;
         }
 
         &.active span:nth-child(2),
         &.active span:nth-child(3) {
-          top: 16px;
+          top: 20px;
           background: #fff;
           transform: rotate(45deg);
+          left: 15px;
         }
       }
 
@@ -103,15 +160,21 @@ header {
       .globalMenuSp {
         position: fixed;
         z-index: 2;
-        top: 0;
+        top: 60px;
         left: 0;
-        color: #fff;
-        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        background: $blue;
         text-align: center;
         width: 100%;
-        opacity: 0;
         transition: opacity 0.6s ease, visibility 0.6s ease;
 
+        .line {
+          width: 80%;
+          max-width: 400px;
+          height: 1px;
+          margin: 20px auto;
+          background-color: #fff;
+        }
         ul {
           margin: 0 auto;
           padding: 0;
@@ -124,13 +187,9 @@ header {
           width: 100%;
           transition: 0.4s all;
 
-          &:last-child {
-            padding-bottom: 0;
-          }
-
-          &:hover {
-            background: #ddd;
-          }
+          // &:last-child {
+          //   padding-bottom: 0;
+          // }
 
           a {
             display: block;

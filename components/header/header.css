@@ -2,21 +2,50 @@
 header {
   position: fixed;
   width: 100%;
+  background-color: #ffffff;
 }
 header .header__inner {
   height: 90px;
   justify-content: space-between;
   display: flex;
   align-items: center;
-  /* PC版のスタイル */
-  /* タブレット版のスタイル */
+  /* spのスタイル */
+}
+@media (max-width: 992px) {
+  header .header__inner {
+    height: 60px;
+  }
 }
 header .header__inner .header__logo img {
   width: 192px;
 }
+header .header__inner .header__item__privacy {
+  display: none;
+}
+@media (max-width: 992px) {
+  header .header__inner .header__item__privacy {
+    display: block;
+  }
+}
 header .header__inner .header__list {
   display: flex;
-  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  header .header__inner .header__list {
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 0px;
+    height: 100vh;
+  }
+  header .header__inner .header__list .header__item {
+    font-size: 15px;
+  }
+  header .header__inner .header__list a {
+    margin: 20px 0;
+  }
+  header .header__inner .header__list a:nth-child(1) {
+    margin-top: 75px;
+  }
 }
 header .header__inner .header__list a {
   text-decoration: none;
@@ -24,10 +53,16 @@ header .header__inner .header__list a {
 header .header__inner .header__list .header__item {
   list-style: none;
   color: #000;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   margin-right: 50px;
   padding: 15px 0px;
+}
+@media (max-width: 992px) {
+  header .header__inner .header__list .header__item {
+    padding: 0px;
+    color: #ffffff;
+  }
 }
 header .header__inner .header__list .header__item__info {
   color: #fff;
@@ -35,20 +70,32 @@ header .header__inner .header__list .header__item__info {
   border-radius: 7px;
   padding: 15px 40px;
 }
-@media (min-width: 769px) {
+@media (max-width: 992px) {
+  header .header__inner .header__list .header__item__info {
+    padding: 0;
+    color: #000000;
+    padding: 20px 0;
+    width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+  }
+}
+@media (min-width: 992px) {
   header .header__inner .hamburger {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   header .header__inner .hamburger {
+    color: #ffffff;
+    background: #133979;
     display: block;
     position: fixed;
     z-index: 3;
-    right: 13px;
-    top: 12px;
-    width: 42px;
-    height: 42px;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     text-align: center;
   }
@@ -58,65 +105,69 @@ header .header__inner .header__list .header__item__info {
     width: 30px;
     height: 2px;
     left: 6px;
-    background: #555;
+    background: #ffffff;
     transition: 0.3s ease-in-out;
   }
   header .header__inner .hamburger span:nth-child(1) {
     top: 10px;
+    left: 15px;
   }
   header .header__inner .hamburger span:nth-child(2) {
     top: 20px;
+    left: 15px;
   }
   header .header__inner .hamburger span:nth-child(3) {
     top: 30px;
+    left: 15px;
   }
   header .header__inner .hamburger.active span:nth-child(1) {
-    top: 16px;
-    left: 6px;
+    top: 20px;
     background: #fff;
     transform: rotate(-45deg);
+    left: 15px;
   }
   header .header__inner .hamburger.active span:nth-child(2), header .header__inner .hamburger.active span:nth-child(3) {
-    top: 16px;
+    top: 20px;
     background: #fff;
     transform: rotate(45deg);
+    left: 15px;
   }
-  header .header__inner nav.globalMenuSp {
+  header .header__inner .globalMenuSp {
     position: fixed;
     z-index: 2;
-    top: 0;
+    top: 60px;
     left: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    background: #133979;
     text-align: center;
     width: 100%;
-    opacity: 0;
     transition: opacity 0.6s ease, visibility 0.6s ease;
   }
-  header .header__inner nav.globalMenuSp ul {
+  header .header__inner .globalMenuSp .line {
+    width: 80%;
+    max-width: 400px;
+    height: 1px;
+    margin: 20px auto;
+    background-color: #fff;
+  }
+  header .header__inner .globalMenuSp ul {
     margin: 0 auto;
     padding: 0;
     width: 100%;
   }
-  header .header__inner nav.globalMenuSp ul li {
+  header .header__inner .globalMenuSp ul li {
     list-style-type: none;
     padding: 0;
     width: 100%;
     transition: 0.4s all;
   }
-  header .header__inner nav.globalMenuSp ul li:last-child {
-    padding-bottom: 0;
-  }
-  header .header__inner nav.globalMenuSp ul li:hover {
-    background: #ddd;
-  }
-  header .header__inner nav.globalMenuSp ul li a {
+  header .header__inner .globalMenuSp ul li a {
     display: block;
     color: #fff;
     padding: 1em 0;
     text-decoration: none;
   }
-  header .header__inner nav.globalMenuSp.active {
+  header .header__inner .globalMenuSp.active {
     opacity: 1;
   }
 }
