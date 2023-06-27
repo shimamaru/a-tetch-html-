@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="./components/footer/footer.css" />
     <link rel="stylesheet" href="./components/header/header.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
     <title>Build in HTML</title>
   </head>
   <body>
-    <script src="index.js"></script>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <img src="../../img/header-logo.png" alt="" />
+        </h1>
+        <!-- <div class="pc-header">
+          <nav class="globalMenuSp">
+            <ul class="header__list">
+              <a href="#"><li class="header__item">Maroudo HoiHoiの特徴</li></a>
+              <a href="#"
+                ><li class="header__item">⾼品質なCookieデータを活⽤</li></a
+              >
+              <a href="#"><li class="header__item">配信価格</li></a>
+              <a href="#"
+                ><li class="header__item header__item__info">
+                  お問い合わせ
+                </li></a
+              >
+            </ul>
+          </nav>
+        </div> -->
+        <div class="sp-header">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="globalMenuSp">
+            <ul class="header__list">
+              <a href="#"><li class="header__item">Maroudo HoiHoiの特徴</li></a>
+              <a href="#"
+                ><li class="header__item">⾼品質なCookieデータを活⽤</li></a
+              >
+              <a href="#"><li class="header__item">配信価格</li></a>
+              <a href="#"
+                ><li class="header__item header__item__info">
+                  お問い合わせ
+                </li></a
+              >
+              <div class="line"></div>
+              <a href="#"
+                ><li class="header__item header__item__privacy">
+                  プライバシーポリシー
+                </li></a
+              >
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./components/header/header.js"></script>
   </body>
 </html>
