@@ -6,12 +6,18 @@
 
   .main__inner {
     max-width: $max-width-lg;
+    width: 90%;
     margin: 0 auto;
+
+    img {
+      z-index: -1;
+    }
 
     .main__list {
       ul {
         display: flex;
         justify-content: left;
+        gap: 10px;
       }
 
       .main__list__item {
@@ -21,8 +27,6 @@
         width: 180px;
         height: 180px;
         font-size: 18px;
-
-        // background-color: $blue;
         background-image: url("../../img/main-visual-backImage04.png");
         background-repeat: no-repeat;
         background-position: center center;
@@ -57,7 +61,7 @@
 
     .main__visual_image_3 {
       img {
-        width: 250px;
+        max-width: 500px;
         left: -50px;
         bottom: 50px;
       }
@@ -70,6 +74,7 @@
         color: $blue;
         p {
           font-size: $fontsize-xl;
+          line-height: 48px;
         }
       }
 
@@ -77,6 +82,8 @@
         margin: 40px 0 80px;
         font-size: $fontsize-xxl;
         color: $blue;
+        line-height: 87px;
+
         span {
           color: $orange;
         }
