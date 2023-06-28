@@ -1,0 +1,86 @@
+@import "../../variables";
+
+.main {
+  margin: 95px 0;
+  font-weight: bold;
+
+  .main__inner {
+    max-width: $max-width-lg;
+    margin: 0 auto;
+
+    .main__list {
+      ul {
+        display: flex;
+        justify-content: left;
+      }
+
+      .main__list__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+        font-size: 18px;
+
+        // background-color: $blue;
+        background-image: url("../../img/main-visual-backImage04.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        color: $white;
+        overflow: hidden;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+    }
+
+    .main__visual_image_1 {
+      img {
+        width: 280px;
+        top: -110px;
+        left: 23%;
+      }
+    }
+
+    .main__visual_image_2 {
+      img {
+        width: 750px;
+        right: 20px;
+        right: -20px;
+      }
+    }
+
+    .main__visual_image_3 {
+      img {
+        width: 250px;
+        left: -50px;
+        bottom: 50px;
+      }
+    }
+    .main__text {
+      margin-top: 185px;
+      .main__subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        color: $blue;
+        p {
+          font-size: $fontsize-xl;
+        }
+      }
+
+      .main__title {
+        margin: 40px 0 80px;
+        font-size: $fontsize-xxl;
+        color: $blue;
+        span {
+          color: $orange;
+        }
+      }
+    }
+  }
+}

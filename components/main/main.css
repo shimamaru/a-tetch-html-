@@ -1,3 +1,67 @@
-
+.main {
+  margin: 95px 0;
+  font-weight: bold;
+}
+.main .main__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main .main__inner .main__list ul {
+  display: flex;
+  justify-content: left;
+}
+.main .main__inner .main__list .main__list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  font-size: 18px;
+  background-image: url("../../img/main-visual-backImage04.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff;
+  overflow: hidden;
+}
+.main .main__inner .main__list .main__list__item p {
+  text-align: center;
+}
+.main .main__inner img {
+  position: absolute;
+}
+.main .main__inner .main__visual_image_1 img {
+  width: 280px;
+  top: -110px;
+  left: 23%;
+}
+.main .main__inner .main__visual_image_2 img {
+  width: 750px;
+  right: 20px;
+  right: -20px;
+}
+.main .main__inner .main__visual_image_3 img {
+  width: 250px;
+  left: -50px;
+  bottom: 50px;
+}
+.main .main__inner .main__text {
+  margin-top: 185px;
+}
+.main .main__inner .main__text .main__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #133979;
+}
+.main .main__inner .main__text .main__subtitle p {
+  font-size: 28px;
+}
+.main .main__inner .main__text .main__title {
+  margin: 40px 0 80px;
+  font-size: 58px;
+  color: #133979;
+}
+.main .main__inner .main__text .main__title span {
+  color: #dc692a;
+}
 
 /*# sourceMappingURL=main.css.map */
