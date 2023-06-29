@@ -1,0 +1,121 @@
+.feature {
+  padding-top: 100px;
+  font-weight: bold;
+}
+.feature .sp-only {
+  display: none;
+}
+@media (max-width: 992px) {
+  .feature .sp-only {
+    display: block;
+  }
+}
+.feature .pc-only {
+  display: block;
+}
+@media (max-width: 992px) {
+  .feature .pc-only {
+    display: none;
+  }
+}
+.feature .feature__text {
+  max-width: 1150px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.feature .feature__text .feature__title {
+  font-size: 32px;
+  line-height: 54px;
+  color: #133979;
+  font-size: 38px;
+}
+.feature .feature__text .feature__description {
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 60px;
+}
+.feature .feature__list {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0f4ff;
+  z-index: -1;
+  max-width: 1150px;
+  width: 90%;
+  margin: 0 auto;
+  color: #133979;
+  padding-left: 15px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .feature .feature__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.feature .feature__list .feature__list__item {
+  max-width: 290px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+.feature .feature__list .feature__list__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: 75px;
+  background-image: url("../img/features-box-image01.png");
+  background-repeat: no-repeat;
+}
+.feature .feature__list .feature__list__title {
+  font-size: 19px;
+  position: relative;
+  z-index: 1;
+}
+.feature .feature__list .feature__list__title::before {
+  z-index: -1;
+  position: absolute;
+  left: -10px;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  background-color: #ffffff;
+  margin-right: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  vertical-align: middle;
+  font-size: 19px;
+}
+.feature .feature__list .feature__list__title span {
+  font-size: 38px;
+  line-height: 38px;
+}
+.feature .feature__list .feature__list__subtitle {
+  padding-top: 10px;
+}
+.feature .feature__list .feature__list__description {
+  position: relative;
+  color: #000000;
+  padding-left: 30px;
+  padding-top: 10px;
+  line-height: 26px;
+}
+.feature .feature__list .feature__list__description::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  content: "";
+  background-image: url("../img/features-box-image04.png");
+  background-image: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=feature.css.map */
