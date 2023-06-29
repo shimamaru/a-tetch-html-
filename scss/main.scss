@@ -18,6 +18,11 @@
         display: flex;
         justify-content: left;
         gap: 10px;
+        @media (max-width: $breakpoint-lg) {
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 210px;
+        }
       }
 
       .main__list__item {
@@ -30,6 +35,7 @@
         background-image: url("../../img/main-visual-backImage04.png");
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: contain;
         color: $white;
         overflow: hidden;
 
@@ -48,14 +54,23 @@
         width: 280px;
         top: -110px;
         left: 23%;
+        @media (max-width: $breakpoint-lg) {
+          right: 0;
+          left: unset;
+          width: 230px;
+        }
       }
     }
 
     .main__visual_image_2 {
       img {
         width: 750px;
-        right: 20px;
+        top: 30%;
         right: -20px;
+        @media (max-width: $breakpoint-lg) {
+          max-width: 500px;
+          width: 100%;
+        }
       }
     }
 
@@ -63,18 +78,26 @@
       img {
         max-width: 500px;
         left: -50px;
-        bottom: 50px;
+        bottom: 0px;
       }
     }
     .main__text {
       margin-top: 185px;
+      @media (max-width: $breakpoint-lg) {
+        margin-top: 95px;
+      }
       .main__subtitle {
         font-size: 20px;
         font-weight: 700;
         color: $blue;
+
         p {
           font-size: $fontsize-xl;
           line-height: 48px;
+          @media (max-width: $breakpoint-lg) {
+            font-size: 18px;
+            line-height: 31px;
+          }
         }
       }
 
@@ -86,6 +109,10 @@
 
         span {
           color: $orange;
+        }
+        @media (max-width: $breakpoint-lg) {
+          font-size: 38px;
+          line-height: 48px;
         }
       }
     }

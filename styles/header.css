@@ -4,8 +4,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 header .header__inner {
   height: 90px;
@@ -78,7 +77,8 @@ header .header__inner .header__list .header__item__info {
     padding: 0;
     color: #000000;
     padding: 20px 0;
-    width: 400px;
+    max-width: 400px;
+    width: 80%;
     margin: 0 auto;
     background: #ffffff;
   }
@@ -112,25 +112,25 @@ header .header__inner .header__list .header__item__info {
     transition: 0.3s ease-in-out;
   }
   header .header__inner .hamburger span:nth-child(1) {
-    top: 10px;
+    top: 17.5px;
     left: 15px;
   }
   header .header__inner .hamburger span:nth-child(2) {
-    top: 20px;
+    top: 27.5px;
     left: 15px;
   }
   header .header__inner .hamburger span:nth-child(3) {
-    top: 30px;
+    top: 37.5px;
     left: 15px;
   }
   header .header__inner .hamburger.active span:nth-child(1) {
-    top: 20px;
+    top: 27.5px;
     background: #fff;
     transform: rotate(-45deg);
     left: 15px;
   }
   header .header__inner .hamburger.active span:nth-child(2), header .header__inner .hamburger.active span:nth-child(3) {
-    top: 20px;
+    top: 27.5px;
     background: #fff;
     transform: rotate(45deg);
     left: 15px;

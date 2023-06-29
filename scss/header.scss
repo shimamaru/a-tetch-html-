@@ -5,8 +5,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $white;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.5);
 
   .header__inner {
     height: 90px;
@@ -22,14 +21,6 @@ header {
         width: 192px;
       }
     }
-
-    // .pc-header {
-    //   display: block;
-
-    //   @media (min-width: $breakpoint-lg) {
-    //     display: none;
-    //   }
-    // }
 
     //プライバシーポリシーのスタイル
     .header__item__privacy {
@@ -91,7 +82,8 @@ header {
           padding: 0;
           color: $black;
           padding: 20px 0;
-          width: 400px;
+          max-width: 400px;
+          width: 80%;
           margin: 0 auto;
           background: $white;
         }
@@ -117,7 +109,6 @@ header {
         height: 60px;
         cursor: pointer;
         text-align: center;
-        // background: transparent;
 
         span {
           display: block;
@@ -129,22 +120,21 @@ header {
           transition: 0.3s ease-in-out;
 
           &:nth-child(1) {
-            top: 10px;
+            top: 17.5px;
             left: 15px;
           }
           &:nth-child(2) {
-            top: 20px;
+            top: 27.5px;
             left: 15px;
           }
           &:nth-child(3) {
-            top: 30px;
+            top: 37.5px;
             left: 15px;
           }
         }
 
         &.active span:nth-child(1) {
-          top: 20px;
-          // left: 6px;
+          top: 27.5px;
           background: #fff;
           transform: rotate(-45deg);
           left: 15px;
@@ -152,7 +142,7 @@ header {
 
         &.active span:nth-child(2),
         &.active span:nth-child(3) {
-          top: 20px;
+          top: 27.5px;
           background: #fff;
           transform: rotate(45deg);
           left: 15px;
