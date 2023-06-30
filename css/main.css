@@ -1,5 +1,6 @@
+@charset "UTF-8";
 .main {
-  margin: 95px 0;
+  margin-top: 95px;
   font-weight: bold;
 }
 .main .main__inner {
@@ -46,6 +47,7 @@
   width: 280px;
   top: -110px;
   left: 23%;
+  overflow: hidden; /* コンテナー外の画像を隠す */
 }
 @media (max-width: 992px) {
   .main .main__inner .main__visual_image_1 img {
@@ -58,6 +60,7 @@
   width: 750px;
   top: 30%;
   right: -20px;
+  overflow: hidden; /* コンテナー外の画像を隠す */
 }
 @media (max-width: 992px) {
   .main .main__inner .main__visual_image_2 img {
@@ -68,7 +71,8 @@
 .main .main__inner .main__visual_image_3 img {
   max-width: 500px;
   left: -50px;
-  bottom: 0px;
+  top: 600px;
+  overflow: hidden; /* コンテナー外の画像を隠す */
 }
 .main .main__inner .main__text {
   margin-top: 185px;
