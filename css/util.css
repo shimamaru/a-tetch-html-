@@ -1,3 +1,88 @@
-
+@charset "UTF-8";
+.util {
+  margin: 500px;
+}
+.util .util__inner {
+  background-color: #cdf5f6;
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 600px;
+  margin-top: 100px;
+}
+.util .util__inner .util__text {
+  margin: 0 auto;
+  font-weight: bold;
+  background-color: #cbe4f9;
+}
+.util .util__inner .util__text .util__title {
+  text-align: center;
+  font-size: 32px;
+  line-height: 54px;
+  color: #133979;
+  background-color: #eff9da;
+}
+.util .util__inner .util__text .util_desc {
+  padding-top: 25px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f9ebdf;
+}
+.util .util__inner .util__list {
+  padding-top: 10px;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  background-color: #f9d8d6;
+}
+.util .util__inner .util__list .util__item {
+  background-color: #d6cdea;
+  width: 295px;
+  margin: 0 auto;
+}
+.util .util__inner .util__list .util__item img {
+  width: 295px;
+  margin: 0 auto;
+}
+.util .util__inner .util__list .util__item .util__item__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.util .util__inner .util__list .line {
+  width: 1px;
+  height: 200px;
+  border-left: 1px dotted #000;
+}
+.util .util__inner .util__ince {
+  position: relative; /* 親要素をrelativeに設定 */
+  background-color: #f9ebdf;
+  height: 100px;
+}
+.util .util__inner .util__ince .util__arrow {
+  background-color: #eff9da;
+  position: absolute; /* 子要素をabsoluteに設定 */
+  left: 50%; /* 親要素の中央に配置するために50%に設定 */
+  transform: translateX(-50%); /* 中央寄せするために-50%に設定 */
+}
+.util .util__inner .util__ince .util__arrow::after {
+  margin: 0 auto;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: calc(50vw - 50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid #e0f4ff; /* 好みで高さ色を変えてください */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+.util .util__inner .util__ince__item {
+  background-color: #f9ebdf;
+  height: 100px;
+}
 
 /*# sourceMappingURL=util.css.map */

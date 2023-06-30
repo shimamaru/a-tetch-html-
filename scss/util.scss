@@ -1,4 +1,91 @@
+@import "./variables";
+
 .util {
-  .util__text {
+  margin: 500px;
+  .util__inner {
+    background-color: $green-pale;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+    //
+    height: 600px;
+    margin-top: 100px;
+    .util__text {
+      margin: 0 auto;
+      font-weight: bold;
+      background-color: $blue-pale;
+      .util__title {
+        text-align: center;
+        font-size: 32px;
+        line-height: 54px;
+        color: $blue;
+        background-color: $yellow-pale;
+      }
+      .util_desc {
+        padding-top: 25px;
+        font-size: 15px;
+        line-height: 26px;
+        color: $black;
+        background-color: $orange-pale;
+      }
+    }
+
+    .util__list {
+      padding-top: 10px;
+      padding-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      background-color: $red-pale;
+      .util__item {
+        background-color: $purple-pale;
+        width: 295px;
+        margin: 0 auto;
+        img {
+          width: 295px;
+          margin: 0 auto;
+        }
+        .util__item__text {
+          text-align: center;
+
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: bold;
+        }
+      }
+
+      .line {
+        width: 1px;
+        height: 200px;
+        border-left: 1px dotted #000;
+      }
+    }
+    .util__ince {
+      position: relative; /* 親要素をrelativeに設定 */
+      background-color: $orange-pale;
+      height: 100px;
+      .util__arrow {
+        background-color: $yellow-pale;
+        position: absolute; /* 子要素をabsoluteに設定 */
+        left: 50%; /* 親要素の中央に配置するために50%に設定 */
+        transform: translateX(-50%); /* 中央寄せするために-50%に設定 */
+        &::after {
+          margin: 0 auto;
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: calc(50vw - 50%);
+          width: 0;
+          height: 0;
+          border-top: 20px solid $sky_blue; /* 好みで高さ色を変えてください */
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+        }
+      }
+    }
+    .util__ince__item {
+      background-color: $orange-pale;
+      height: 100px;
+    }
   }
 }
