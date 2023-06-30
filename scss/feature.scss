@@ -61,9 +61,26 @@
         top: 0;
         right: 0;
         height: 90px;
-        width: 75px;
-        background-image: url("../img/features-box-image01.png");
+        width: 100px;
         background-repeat: no-repeat;
+        z-index: -1;
+      }
+    }
+
+    //画像の配置
+    .item_01 {
+      &::before {
+        background-image: url("../img/features-box-image01.png");
+      }
+    }
+    .item_02 {
+      &::before {
+        background-image: url("../img/features-box-image02.png");
+      }
+    }
+    .item_03 {
+      &::before {
+        background-image: url("../img/features-box-image03.png");
       }
     }
 
@@ -115,13 +132,6 @@
         background-image: no-repeat;
         background-size: cover;
       }
-    }
-    .feature__list > :first-child {
-      /* 一番目の子要素に対するスタイル */
-    }
-
-    .feature__list > :nth-child(2) {
-      /* 二番目の子要素に対するスタイル */
     }
   }
 }
