@@ -7,15 +7,15 @@
       display: block;
     }
   }
-  margin: 500px;
+  margin: 500px 0;
   .util__inner {
     background-color: $green-pale;
     width: 90%;
     max-width: 1150px;
     margin: 0 auto;
     //
-    height: 600px;
-    margin-top: 100px;
+    // height: 600px;
+    // margin-top: 100px;
     .util__text {
       margin: 0 auto;
       font-weight: bold;
@@ -26,6 +26,10 @@
         line-height: 54px;
         color: $blue;
         background-color: $yellow-pale;
+        @media (max-width: $breakpoint-lg) {
+          font-size: 25px;
+          line-height: 43px;
+        }
       }
       .util_desc {
         padding-top: 25px;
@@ -33,30 +37,54 @@
         line-height: 26px;
         color: $black;
         background-color: $orange-pale;
+        @media (max-width: $breakpoint-lg) {
+          padding: 0 10px;
+        }
       }
     }
 
     .util__list {
-      padding-top: 10px;
-      padding-top: 35px;
-      display: flex;
-      justify-content: center;
-      gap: 35px;
+      // padding-top: 35px;
+      // display: flex;
+      // justify-content: center;
+      // column-gap: 35px;
       background-color: $red-pale;
+      @media (max-width: $breakpoint-lg) {
+        flex-direction: column;
+        padding-top: 25px;
+      }
       .util__item {
         background-color: $purple-pale;
-        width: 295px;
-        margin: 0 auto;
+        width: 100%;
+        max-width: 295px;
+        @media (max-width: $breakpoint-lg) {
+          margin: 0 auto;
+        }
         img {
-          width: 295px;
+          width: 100%;
+          max-width: 295px;
           margin: 0 auto;
         }
         .util__item__text {
-          text-align: center;
+          @import "./variables";
 
+          .util {
+            .sp-only {
+              display: none;
+              @media (max-width: $breakpoint-lg) {
+                display: block;
+              }
+            }
+            margin: 500px 0;
+          //  
+
+          text-align: center;
           font-size: 16px;
           line-height: 18px;
           font-weight: bold;
+          @media (max-width: $breakpoint-lg) {
+            line-height: 27px;
+          }
         }
       }
 

@@ -1,107 +1,17 @@
-@charset "UTF-8";
-.util {
-  margin: 500px;
-}
-.util .sp-only {
-  display: none;
-}
-@media (max-width: 992px) {
-  .util .sp-only {
-    display: block;
-  }
-}
-.util .util__inner {
-  background-color: #cdf5f6;
-  width: 90%;
-  max-width: 1150px;
-  margin: 0 auto;
-  height: 600px;
-  margin-top: 100px;
-}
-.util .util__inner .util__text {
-  margin: 0 auto;
-  font-weight: bold;
-  background-color: #cbe4f9;
-}
-.util .util__inner .util__text .util__title {
-  text-align: center;
-  font-size: 32px;
-  line-height: 54px;
-  color: #133979;
-  background-color: #eff9da;
-}
-.util .util__inner .util__text .util_desc {
-  padding-top: 25px;
-  font-size: 15px;
-  line-height: 26px;
-  color: #000000;
-  background-color: #f9ebdf;
-}
-.util .util__inner .util__list {
-  padding-top: 10px;
-  padding-top: 35px;
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  background-color: #f9d8d6;
-}
-.util .util__inner .util__list .util__item {
-  background-color: #d6cdea;
-  width: 295px;
-  margin: 0 auto;
-}
-.util .util__inner .util__list .util__item img {
-  width: 295px;
-  margin: 0 auto;
-}
-.util .util__inner .util__list .util__item .util__item__text {
-  text-align: center;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-}
-.util .util__inner .util__list .line {
-  width: 1px;
-  height: 200px;
-  border-left: 1px dotted #000;
-}
-.util .util__inner .util__ince {
-  position: relative;
-  background-color: #f9ebdf;
-  width: 100%; /* 親要素の幅を設定 */
-}
-.util .util__inner .util__ince .util__arrow {
-  padding-top: 25px;
-  background-color: #eff9da;
-  top: 30px;
-  height: 50px;
-  width: 100%;
-}
-.util .util__inner .util__ince .util__arrow::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-top: 20px solid #e0f4ff;
-  border-left: 120px solid transparent;
-  border-right: 120px solid transparent;
-}
-.util .util__inner .util__ince__item {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
-  background-color: #e0f4ff;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 31px;
-  height: 90px;
-  color: #dc692a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Error: expected "}".
+ *     ,
+ * 140 | }
+ *     |  ^
+ *     '
+ *   scss/util.scss 140:2  root stylesheet */
 
-/*# sourceMappingURL=util.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a     \2577 \a 140 \2502  }\a     \2502   ^\a     \2575 \a   scss/util.scss 140:2  root stylesheet';
+}
