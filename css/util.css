@@ -19,7 +19,6 @@
   }
 }
 .util .util__inner {
-  background-color: #cdf5f6;
   width: 90%;
   max-width: 1150px;
   margin: 0 auto;
@@ -27,14 +26,12 @@
 .util .util__inner .util__text {
   margin: 0 auto;
   font-weight: bold;
-  background-color: #cbe4f9;
 }
 .util .util__inner .util__text .util__title {
   text-align: center;
   font-size: 32px;
   line-height: 54px;
   color: #133979;
-  background-color: #eff9da;
 }
 @media (max-width: 992px) {
   .util .util__inner .util__text .util__title {
@@ -42,15 +39,16 @@
     line-height: 43px;
   }
 }
-.util .util__inner .util__text .util_desc {
+.util .util__inner .util__text .util__desc {
+  max-width: 800px;
+  margin: 0 auto;
   padding-top: 25px;
   font-size: 15px;
   line-height: 26px;
   color: #000000;
-  background-color: #f9ebdf;
 }
 @media (max-width: 992px) {
-  .util .util__inner .util__text .util_desc {
+  .util .util__inner .util__text .util__desc {
     padding: 0 10px;
   }
 }
@@ -59,7 +57,6 @@
   display: flex;
   justify-content: center;
   column-gap: 35px;
-  background-color: #f9d8d6;
 }
 @media (max-width: 992px) {
   .util .util__inner .util__list {
@@ -69,7 +66,6 @@
   }
 }
 .util .util__inner .util__list .util__item {
-  background-color: #d6cdea;
   width: 100%;
   max-width: 295px;
 }
@@ -110,9 +106,16 @@
   height: 200px;
   border-left: 1px dotted #000;
 }
+@media (max-width: 992px) {
+  .util .util__inner .util__list .line {
+    margin: 15px auto;
+    height: 1px;
+    width: 300px;
+    border-bottom: 1px dotted #000;
+  }
+}
 .util .util__inner .util__ince {
   position: relative;
-  background-color: #f9ebdf;
   width: 100%; /* 親要素の幅を設定 */
 }
 @media (max-width: 992px) {
@@ -122,7 +125,6 @@
 }
 .util .util__inner .util__ince .util__arrow {
   padding-top: 25px;
-  background-color: #eff9da;
   top: 30px;
   height: 50px;
   width: 100%;

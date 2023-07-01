@@ -15,31 +15,33 @@
   }
   margin: 500px 0;
   .util__inner {
-    background-color: $green-pale;
+    // background-color: $green-pale;
     width: 90%;
     max-width: 1150px;
     margin: 0 auto;
     .util__text {
       margin: 0 auto;
       font-weight: bold;
-      background-color: $blue-pale;
+      // background-color: $blue-pale;
       .util__title {
         text-align: center;
         font-size: 32px;
         line-height: 54px;
         color: $blue;
-        background-color: $yellow-pale;
+        // background-color: $yellow-pale;
         @media (max-width: $breakpoint-lg) {
           font-size: 25px;
           line-height: 43px;
         }
       }
-      .util_desc {
+      .util__desc {
+        max-width: 800px;
+        margin: 0 auto;
         padding-top: 25px;
         font-size: 15px;
         line-height: 26px;
         color: $black;
-        background-color: $orange-pale;
+        // background-color: $orange-pale;
         @media (max-width: $breakpoint-lg) {
           padding: 0 10px;
         }
@@ -51,14 +53,14 @@
       display: flex;
       justify-content: center;
       column-gap: 35px;
-      background-color: $red-pale;
+      // background-color: $red-pale;
       @media (max-width: $breakpoint-lg) {
         height: 360px;
         flex-direction: column;
         padding-top: 25px;
       }
       .util__item {
-        background-color: $purple-pale;
+        // background-color: $purple-pale;
         width: 100%;
         max-width: 295px;
         @media (max-width: $breakpoint-lg) {
@@ -95,11 +97,17 @@
         width: 1px;
         height: 200px;
         border-left: 1px dotted #000;
+        @media (max-width: $breakpoint-lg) {
+          margin: 15px auto;
+          height: 1px;
+          width: 300px;
+          border-bottom: 1px dotted #000;
+        }
       }
     }
     .util__ince {
       position: relative;
-      background-color: $orange-pale;
+      // background-color: $orange-pale;
       width: 100%; /* 親要素の幅を設定 */
       @media (max-width: $breakpoint-lg) {
         padding-top: 15px;
@@ -107,7 +115,7 @@
 
       .util__arrow {
         padding-top: 25px;
-        background-color: $yellow-pale;
+        // background-color: $yellow-pale;
         top: 30px;
         height: 50px;
         width: 100%;
@@ -130,6 +138,7 @@
       width: 100%;
       max-width: 700px;
       text-align: center;
+      // background-color: $sky_blue;
       background-color: $sky_blue;
       font-size: 18px;
       font-weight: bold;
