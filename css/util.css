@@ -2,6 +2,14 @@
 .util {
   margin: 500px;
 }
+.util .sp-only {
+  display: none;
+}
+@media (max-width: 992px) {
+  .util .sp-only {
+    display: block;
+  }
+}
 .util .util__inner {
   background-color: #cdf5f6;
   width: 90%;
@@ -58,31 +66,42 @@
   border-left: 1px dotted #000;
 }
 .util .util__inner .util__ince {
-  position: relative; /* 親要素をrelativeに設定 */
+  position: relative;
   background-color: #f9ebdf;
-  height: 100px;
+  width: 100%; /* 親要素の幅を設定 */
 }
 .util .util__inner .util__ince .util__arrow {
+  padding-top: 25px;
   background-color: #eff9da;
-  position: absolute; /* 子要素をabsoluteに設定 */
-  left: 50%; /* 親要素の中央に配置するために50%に設定 */
-  transform: translateX(-50%); /* 中央寄せするために-50%に設定 */
+  top: 30px;
+  height: 50px;
+  width: 100%;
 }
 .util .util__inner .util__ince .util__arrow::after {
-  margin: 0 auto;
   content: "";
   position: absolute;
-  top: 100%;
-  left: calc(50vw - 50%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-top: 20px solid #e0f4ff; /* 好みで高さ色を変えてください */
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-top: 20px solid #e0f4ff;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
 }
 .util .util__inner .util__ince__item {
-  background-color: #f9ebdf;
-  height: 100px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  background-color: #e0f4ff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 31px;
+  height: 90px;
+  color: #dc692a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=util.css.map */
