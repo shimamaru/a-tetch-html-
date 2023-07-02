@@ -1,0 +1,24 @@
+@import "./variables";
+
+.segment {
+  color: $black;
+  margin: 500px 0;
+  background-color: $green-pale;
+
+  .segment__inner {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: $blue-pale;
+    //
+    height: 1000px;
+    .segment__content {
+      background-color: $yellow-pale;
+      //
+      height: 500px;
+    }
+    .segmemt__title {
+      height: 200px;
+    }
+  }
+}

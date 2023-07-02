@@ -1,0 +1,21 @@
+.segment {
+  color: #000000;
+  margin: 500px 0;
+  background-color: #cdf5f6;
+}
+.segment .segment__inner {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: #cbe4f9;
+  height: 1000px;
+}
+.segment .segment__inner .segment__content {
+  background-color: #eff9da;
+  height: 500px;
+}
+.segment .segment__inner .segmemt__title {
+  height: 200px;
+}
+
+/*# sourceMappingURL=segment.css.map */
