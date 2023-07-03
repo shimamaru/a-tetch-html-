@@ -1,21 +1,102 @@
 .segment {
   color: #000000;
   margin: 500px 0;
+  font-weight: bold;
   background-color: #cdf5f6;
+}
+.segment .sp-only {
+  display: none;
+}
+@media (max-width: 992px) {
+  .segment .sp-only {
+    display: block;
+  }
+}
+.segment .pc-only {
+  display: block;
+}
+@media (max-width: 992px) {
+  .segment .pc-only {
+    display: none;
+  }
 }
 .segment .segment__inner {
   width: 90%;
   margin: 0 auto;
   max-width: 700px;
   background-color: #cbe4f9;
-  height: 1000px;
 }
 .segment .segment__inner .segment__content {
+  padding: 30px 0;
+  border-radius: 5px;
   background-color: #eff9da;
-  height: 500px;
 }
-.segment .segment__inner .segmemt__title {
-  height: 200px;
+.segment .segment__inner .segment__content .segmemt__title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 54px;
+  color: #133979;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .segment .segment__inner .segment__content .segmemt__title {
+    font-size: 25px;
+    line-height: 43px;
+  }
+}
+.segment .segment__inner .segment__content .segment__list .segment__item {
+  max-width: 100%;
+  width: 425px;
+  margin: 20px auto;
+  display: flex;
+  color: #133979;
+  line-height: 18px;
+  font-size: 15px;
+  background-color: #f9ebdf;
+}
+@media (max-width: 992px) {
+  .segment .segment__inner .segment__content .segment__list .segment__item {
+    margin: 5px auto;
+  }
+}
+.segment .segment__inner .segment__content .segment__list .segment__item .prop {
+  padding: 5px 0;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+  width: 65px;
+  background-color: #f9d8d6;
+  width: 125px;
+}
+@media (max-width: 992px) {
+  .segment .segment__inner .segment__content .segment__list .segment__item .prop {
+    width: 65px;
+  }
+}
+.segment .segment__inner .segment__content .segment__list .segment__item .value {
+  padding: 5px 0;
+  font-size: 15px;
+  margin-left: 10px;
+  flex: 2;
+  background-color: #d6cdea;
+}
+@media (max-width: 992px) {
+  .segment .segment__inner .segment__content .segment__list .segment__item .value {
+    line-height: 26px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+}
+.segment .segment__inner .segment__content .segment__cation {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #000000;
+  background-color: #cbe4f9;
 }
 
 /*# sourceMappingURL=segment.css.map */
