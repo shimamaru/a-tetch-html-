@@ -97,69 +97,108 @@
   line-height: 22px;
   color: #000000;
 }
-.segment .segment__inner .price .price__text .price__title {
+.segment .segment__inner .price__wrap {
+  margin-top: 50px;
+  font-weight: bold;
+}
+.segment .segment__inner .price__wrap .price__text .price__title {
   font-size: 32px;
   font-weight: bold;
   line-height: 54px;
   text-align: center;
   color: #133979;
-  background-color: #cbe4f9;
 }
 @media (max-width: 992px) {
-  .segment .segment__inner .price .price__text .price__title {
+  .segment .segment__inner .price__wrap .price__text .price__title {
     font-size: 25px;
     line-height: 43px;
   }
 }
-.segment .segment__inner .price .price__text .price__desc {
+.segment .segment__inner .price__wrap .price__text .price__desc {
   text-align: center;
   margin: 0 auto;
-  background-color: #cdf5f6;
+  background-color: #ffffff;
   font-size: 13px;
   line-height: 13px;
   width: 290px;
   padding: 15px 0;
   margin-top: 25px;
 }
-.segment .segment__inner .price .price__content {
+.segment .segment__inner .price__wrap .price__content {
   max-width: 700px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.segment .segment__inner .price .price__content .price__content__left {
+.segment .segment__inner .price__wrap .price__content .price__content__left {
   width: 100%;
   max-width: 330px;
   text-align-last: left;
+  padding-left: 10px;
+  padding-top: 5px;
   color: #133979;
-  background-color: #f9ebdf;
 }
-.segment .segment__inner .price .price__content .price__content__left .price__item {
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item {
   margin-top: 15px;
 }
-.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__subtitile {
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item .price__item__subtitile {
   font-size: 19px;
   line-height: 32px;
 }
-.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__works {
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item .price__item__works {
+  margin-top: 15px;
   display: flex;
   font-size: 15px;
   line-height: 26px;
 }
-.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__works .line {
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item .price__item__works .line {
   width: 1px;
   height: 75px;
   border-left: 1px dotted #000;
 }
-.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__works .price {
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item .price__item__works .price {
   color: #000000;
+  padding-left: 10px;
 }
-.segment .segment__inner .price .price__content .price__content__left .price__item .month__caution {
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item .month__caution {
   color: #000000;
+  margin-top: 15px;
+  font-size: 13px;
 }
-.segment .segment__inner .price .price__content .price__content__right {
-  background-color: #f9d8d6;
+.segment .segment__inner .price__wrap .price__content .price__content__left .price__item .white__line {
+  margin: 20px auto;
+  height: 1px;
+  width: 300px;
+  border-bottom: 2px solid #fff;
+}
+.segment .segment__inner .price__wrap .price__content .price__content__right {
+  margin-top: 50px;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 330px;
+  padding: 20px 0;
+}
+.segment .segment__inner .price__wrap .price__content .price__content__right__inner {
+  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+.segment .segment__inner .price__wrap .price__content .price__content__right__inner .right__title {
+  text-align: center;
+  color: #133979;
+}
+.segment .segment__inner .price__wrap .price__content .price__content__right__inner .right__caution {
+  color: #000000;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.segment .segment__inner .price__wrap .price__content .price__content__right__inner ul {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+.segment .segment__inner .price__wrap .price__content .price__content__right__inner ul li {
+  padding: 3px;
 }
 
 /*# sourceMappingURL=segment.css.map */
