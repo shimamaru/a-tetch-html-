@@ -1,6 +1,7 @@
 @import "./variables";
 
 .segment {
+  background-color: $sky_blue;
   .sp-only {
     display: none;
     @media (max-width: $breakpoint-lg) {
@@ -14,19 +15,17 @@
     }
   }
   color: $black;
-  margin: 500px 0;
+  padding: 500px 0;
   font-weight: bold;
-  background-color: $green-pale;
 
   .segment__inner {
     width: 90%;
     margin: 0 auto;
     max-width: 700px;
-    background-color: $blue-pale;
     .segment__content {
       padding: 30px 0;
-      border-radius: 5px;
-      background-color: $yellow-pale;
+      border-radius: 10px;
+      background-color: $white;
       .segmemt__title {
         font-size: 32px;
         font-weight: bold;
@@ -47,29 +46,30 @@
           color: $blue;
           line-height: 18px;
           font-size: 15px;
-          background-color: $orange-pale;
           @media (max-width: $breakpoint-lg) {
             margin: 5px auto;
           }
           .prop {
+            background-color: $sky_blue;
+            color: $blue;
             padding: 5px 0;
             border-radius: 12px;
             font-size: 16px;
             text-align: center;
             flex: 1;
             width: 65px;
-            background-color: $red-pale;
             width: 125px;
             @media (max-width: $breakpoint-lg) {
               width: 65px;
+              background-color: $white;
             }
           }
           .value {
+            color: $black;
             padding: 5px 0;
             font-size: 15px;
             margin-left: 10px;
             flex: 2;
-            background-color: $purple-pale;
             @media (max-width: $breakpoint-lg) {
               line-height: 26px;
               font-size: 15px;
@@ -86,7 +86,79 @@
         font-size: 13px;
         line-height: 22px;
         color: $black;
-        background-color: $blue-pale;
+        // background-color: $blue-pale;
+      }
+    }
+
+    .price {
+      .price__text {
+        .price__title {
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 54px;
+          text-align: center;
+          color: $blue;
+          background-color: $blue-pale;
+          @media (max-width: $breakpoint-lg) {
+            font-size: 25px;
+            line-height: 43px;
+          }
+        }
+        .price__desc {
+          text-align: center;
+          margin: 0 auto;
+          background-color: $green-pale;
+          font-size: 13px;
+          line-height: 13px;
+          width: 290px;
+          padding: 15px 0;
+          margin-top: 25px;
+        }
+      }
+
+      .price__content {
+        max-width: 700px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        .price__content__left {
+          width: 100%;
+          max-width: 330px;
+          text-align-last: left;
+          color: $blue;
+          background-color: $orange-pale;
+          .price__item {
+            margin-top: 15px;
+            .price__item__subtitile {
+              font-size: 19px;
+              line-height: 32px;
+            }
+            .price__item__works {
+              display: flex;
+              font-size: 15px;
+              line-height: 26px;
+              .month {
+              }
+              .line {
+                width: 1px;
+                height: 75px;
+                border-left: 1px dotted #000;
+              }
+              .price {
+                color: $black;
+              }
+            }
+            .month__caution {
+              color: $black;
+            }
+          }
+        }
+
+        .price__content__right {
+          background-color: $red-pale;
+        }
       }
     }
   }

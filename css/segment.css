@@ -1,8 +1,8 @@
 .segment {
+  background-color: #e0f4ff;
   color: #000000;
-  margin: 500px 0;
+  padding: 500px 0;
   font-weight: bold;
-  background-color: #cdf5f6;
 }
 .segment .sp-only {
   display: none;
@@ -24,12 +24,11 @@
   width: 90%;
   margin: 0 auto;
   max-width: 700px;
-  background-color: #cbe4f9;
 }
 .segment .segment__inner .segment__content {
   padding: 30px 0;
-  border-radius: 5px;
-  background-color: #eff9da;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 .segment .segment__inner .segment__content .segmemt__title {
   font-size: 32px;
@@ -52,7 +51,6 @@
   color: #133979;
   line-height: 18px;
   font-size: 15px;
-  background-color: #f9ebdf;
 }
 @media (max-width: 992px) {
   .segment .segment__inner .segment__content .segment__list .segment__item {
@@ -60,26 +58,28 @@
   }
 }
 .segment .segment__inner .segment__content .segment__list .segment__item .prop {
+  background-color: #e0f4ff;
+  color: #133979;
   padding: 5px 0;
   border-radius: 12px;
   font-size: 16px;
   text-align: center;
   flex: 1;
   width: 65px;
-  background-color: #f9d8d6;
   width: 125px;
 }
 @media (max-width: 992px) {
   .segment .segment__inner .segment__content .segment__list .segment__item .prop {
     width: 65px;
+    background-color: #ffffff;
   }
 }
 .segment .segment__inner .segment__content .segment__list .segment__item .value {
+  color: #000000;
   padding: 5px 0;
   font-size: 15px;
   margin-left: 10px;
   flex: 2;
-  background-color: #d6cdea;
 }
 @media (max-width: 992px) {
   .segment .segment__inner .segment__content .segment__list .segment__item .value {
@@ -96,7 +96,70 @@
   font-size: 13px;
   line-height: 22px;
   color: #000000;
+}
+.segment .segment__inner .price .price__text .price__title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 54px;
+  text-align: center;
+  color: #133979;
   background-color: #cbe4f9;
+}
+@media (max-width: 992px) {
+  .segment .segment__inner .price .price__text .price__title {
+    font-size: 25px;
+    line-height: 43px;
+  }
+}
+.segment .segment__inner .price .price__text .price__desc {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #cdf5f6;
+  font-size: 13px;
+  line-height: 13px;
+  width: 290px;
+  padding: 15px 0;
+  margin-top: 25px;
+}
+.segment .segment__inner .price .price__content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.segment .segment__inner .price .price__content .price__content__left {
+  width: 100%;
+  max-width: 330px;
+  text-align-last: left;
+  color: #133979;
+  background-color: #f9ebdf;
+}
+.segment .segment__inner .price .price__content .price__content__left .price__item {
+  margin-top: 15px;
+}
+.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__subtitile {
+  font-size: 19px;
+  line-height: 32px;
+}
+.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__works {
+  display: flex;
+  font-size: 15px;
+  line-height: 26px;
+}
+.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__works .line {
+  width: 1px;
+  height: 75px;
+  border-left: 1px dotted #000;
+}
+.segment .segment__inner .price .price__content .price__content__left .price__item .price__item__works .price {
+  color: #000000;
+}
+.segment .segment__inner .price .price__content .price__content__left .price__item .month__caution {
+  color: #000000;
+}
+.segment .segment__inner .price .price__content .price__content__right {
+  background-color: #f9d8d6;
 }
 
 /*# sourceMappingURL=segment.css.map */
