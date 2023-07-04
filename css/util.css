@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.util {
+  padding-bottom: 80px;
+}
 .util .sp-only {
   display: none;
 }

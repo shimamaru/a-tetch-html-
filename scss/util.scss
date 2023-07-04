@@ -1,6 +1,7 @@
 @import "./variables";
 
 .util {
+  padding-bottom: 80px;
   .sp-only {
     display: none;
     @media (max-width: $breakpoint-lg) {

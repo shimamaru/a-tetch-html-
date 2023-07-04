@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/util.css" />
@@ -235,7 +235,10 @@
               <p class="value">00:00〜23:59まで1分単位で設定可能</p>
             </li>
             <li class="segment__item">
-              <p class="prop">OS /キャリア</p>
+              <p class="prop">
+                OS <br class="sp-only" />
+                /キャリア
+              </p>
               <p class="value">PC /iOS /Android</p>
             </li>
           </ul>
@@ -247,39 +250,45 @@
             </p>
           </div>
         </div>
-        <div class="price">
-          <div class="price">
-            <h2 class="price__title"></h2>
-            <p class="price__desc"></p>
+        <div class="price__wrap">
+          <div class="price__text">
+            <h2 class="price__title">配信価格</h2>
+            <p class="price__desc">2022/07/01〜2022/09/30⼊稿分まで</p>
           </div>
-          <div class="price__content__left">
-            <div class="price__item">
-              <h3 class="price__item__subtitile"></h3>
-              <div class="works__wrapper">
+          <div class="price__content">
+            <div class="price__content__left">
+              <div class="price__item">
+                <h3 class="price__item__subtitile">最低出稿⾦額（⽉額）</h3>
                 <div class="price__item__works">
-                  <p class="month"></p>
-                  <p class="price"></p>
+                  <p class="month">
+                    集客のみ <br />
+                    求⼈のみ <br />
+                    集客・求⼈
+                  </p>
+                  <div class="line"></div>
+                  <p class="price">
+                    33,000円〜（16,500円〜）<br />
+                    33,000円〜（16,500円〜）<br />
+                    55,000円〜（27,500円〜）
+                  </p>
                 </div>
-                <div class="price__item__works">
-                  <p class="month"></p>
-                  <p class="price"></p>
-                </div>
-                <div class="price__item__works">
-                  <p class="month"></p>
-                  <p class="price"></p>
-                </div>
+                <p class="month__caution">※2ヶ月以上の申し込みが必要</p>
+                <div class="white__line"></div>
+                <p class="garan">最低1000件／⽉以上の誘導を保証</p>
               </div>
-              <p class="month__caution"></p>
-              <p class="garan"></p>
             </div>
-            <div class="price__item__right">
-              <h3 class="right__title"></h3>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <p class="right__caution"></p>
+            <div class="price__content__right">
+              <div class="price__content__right__inner">
+                <h3 class="right__title">出稿費⽤に含まれるもの</h3>
+                <ul>
+                  <li>配信費⽤</li>
+                  <li>バナー制作</li>
+                  <li>レポート費⽤（2ヶ⽉ごと）</li>
+                </ul>
+                <p class="right__caution">
+                  ※価格は今後変更になる場合があります
+                </p>
+              </div>
             </div>
           </div>
         </div>
