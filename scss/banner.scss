@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./setting";
+
+.banner {
+  background-color: $green-pale;
+  .banner__inner {
+    background-color: $blue-pale;
+    margin: 0 auto;
+    max-width: 1150px;
+    width: 90%;
+
+    .table__wrap {
+      margin-top: 50px;
+      display: flex;
+      font-weight: bold;
+      justify-content: space-between;
+
+      table {
+        color: $blue;
+        background-color: $orange-pale;
+        th {
+          p {
+            width: 170px;
+            padding: 25px 5px;
+            background-color: $sky_blue;
+            border: 1px solid #333;
+          }
+        }
+        td {
+          width: 300px;
+          padding: 25px 10px;
+          background-color: $white;
+          border: 1px solid #333;
+          p {
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
