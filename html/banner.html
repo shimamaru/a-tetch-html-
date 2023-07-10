@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+    />
     <link rel="stylesheet" href="../css/banner.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <title>Build in HTML</title>
@@ -11,9 +16,9 @@
   <body>
     <section class="banner">
       <div class="banner__inner">
-        <h3 class="title">バナー入稿規定</h3>
+        <h3 class="banner__title title">バナー入稿規定</h3>
         <div class="table__wrap">
-          <table>
+          <table class="table__first">
             <tr>
               <th>
                 <p>バナー種類</p>
@@ -30,7 +35,7 @@
                 <p>上下サイズ（pixel）</p>
               </th>
               <td>
-                <p>600</p>
+                <p class="number">600</p>
               </td>
             </tr>
             <tr>
@@ -38,7 +43,7 @@
                 <p>上下サイズ（pixel）</p>
               </th>
               <td>
-                <p>500</p>
+                <p class="number">500</p>
               </td>
             </tr>
             <tr>
@@ -68,24 +73,13 @@
               </td>
             </tr>
           </table>
-          <table>
-            <tr>
-              <th>
-                <p>バナー種類</p>
-              </th>
-              <td>
-                <p>
-                  レクタングル <br />
-                  （ダブルサイズ）
-                </p>
-              </td>
-            </tr>
+          <table class="table__second">
             <tr>
               <th>
                 <p>ALTテキスト</p>
               </th>
               <td>
-                <p>不可</p>
+                <p class="number">不可</p>
               </td>
             </tr>
             <tr>
@@ -113,33 +107,88 @@
               <td>
                 <p>
                   15時までの入稿の場合は6営業日以内の差し替え。
+                  <br />
                   15時以降の入稿の場合は7営業日以内の差し替え。
                 </p>
               </td>
             </tr>
-
-            <!-- <tr>
-              <th>
-<p>
-
-                
-              
-</th>
-              <td>
-                <p></p>
-              </td>
-            </tr> -->
           </table>
         </div>
-        <!-- <p class="banner__caution">
+        <p class="banner__caution caution">
           ※クリエイティブやランディングページの内容によって、媒体側で掲載のお断りをすることがございます。
           <br />
           ※配信先毎のクリエイティブ指定、URL指定については対応をしかねますので、あらかじめご了承ください。
           <br />
           ※配信にあたっては、「広告掲載規定」を順守していることが前提となります。<br />
           ※クリエイティブの修正や制作は別途費⽤となります。<br />
-        </p> -->
+        </p>
+        <div class="banner__img">
+          <img src="../img/regulation-image02.png" alt="" class="pc-only" />
+          <img src="../img/regulation-image01.png" alt="" class="sp-only" />
+        </div>
+        <!--リンク元のHTMLリンク先は表示させたいエリアのid名を指定します。-->
+        <p>
+          <button href="#info" class="modal-open banner__button">
+            広告記載規定
+          </button>
+        </p>
+        <!--表示エリアのHTML。id 名にリンク先と同じ名前を指定します。※表示エリアはHTML の変更が可能なので、レイアウトを自由に変更できます。-->
+        <section id="info">
+          <h2 class="title">広告掲載規定</h2>
+          <h3>
+            1.
+            弊社は、「全社広告掲載基本⽅針」・「全社広告掲載基準」に基づいた広告を掲載させていただいております。
+          </h3>
+          <br />
+          ・全社広告掲載基本⽅針 <br />
+          当社の媒体に掲載する広告は、以下の⽅針に従うものとする。 <br />
+          １. 社会の信頼に応え、真実を伝えるものとする。<br />
+          ２. 公序良俗を守り、品位を損なわないものとする。<br />
+          ３. カスタマーの安全・安⼼に配慮し、その利益に反しないものとする。<br />
+          ４. 会秩序を重んじ、関係諸法規を遵守するものとする。<br />
+          <br />
+          ・全社広告掲載基準
+          当社は、以下に該当する広告は、いかなる媒体においても掲載等しないものとする。<br />
+          １. 以下の各号に該当すると当社が判断する広告主にかかる広告 <br />
+          ① 事業内容、営業⽅法等が関係諸法規に違反している広告主 <br />
+          ② 悪質商法を⾏っている広告主 <br />
+          ③
+          カスタマーの安全・安⼼の観点から、著しく不適合な商品・サービスを提供する広告主
+          <br />
+          ④ プライバシーの侵害、差別を肯定・助⻑する可能性が⾼い広告主 <br />
+          ⑤ 反社会的広告主 <br />
+          ⑥ 経営難により広告実現能⼒が⽋如し、または、その可能性が⾼い広告主
+          <br />
+          ⑦ 当社と係争中、または、そのおそれのある広告主 <br />
+          ⑧ その他前①〜⑦の広告主と関連性の⾼い広告主 <br />
+          ２. 以下の種類に該当すると当社が判断する広告 <br />
+          ① 特定の団体・個⼈にかかる政治・選挙に関する広告 <br />
+          ② 意⾒広告・宗教広告等の思想信条に関わる広告 <br />
+          2.
+          当媒体では『掲載基準』『表記基準』『原稿制作規定』等をもうけ、これらに則った広告を掲載させていただいております。
+          <br />
+          3.
+          弊社は、お客様より当媒体への広告掲載のお申込をいただいたときは、審査を⾏います。
+          <br />
+          お客様には、審査に必要な資料の提供や審査への協⼒をお願いすることがあります。
+          <br />
+          4. 掲載された広告の内容に関する⼀切の責任は、お客様に帰属します。<br />
+          5. 当媒体への広告掲載及びそれに付随するサービスを通じて、<br />
+          お客様が取得される資料請求者等の個⼈情報につきましては、下記の遵守をお願い致します。<br />
+          ・本⼈が承諾した⽬的以外の範囲で利⽤、開⽰しないこと <br />
+          ・漏洩防⽌対策をとること <br />
+          ・本⼈からの個⼈情報に関する問合せに対応すること <br />
+          掲載規定に違反した場合、弊社はお客様への個⼈情報のご提供を停⽌、または中⽌させていただくことがあります。
+        </section>
       </div>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="../js/banner.js"></script>
   </body>
 </html>

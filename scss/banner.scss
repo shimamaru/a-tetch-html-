@@ -1,10 +1,23 @@
 @import "./variables";
 @import "./setting";
 
+.sp-only {
+  display: none;
+  @media (max-width: $breakpoint-lg) {
+    display: block;
+  }
+}
+.pc-only {
+  display: block;
+  @media (max-width: $breakpoint-lg) {
+    display: none;
+  }
+}
+
 .banner {
-  background-color: $green-pale;
+  font-weight: bold;
   .banner__inner {
-    background-color: $blue-pale;
+    padding-bottom: 120px;
     margin: 0 auto;
     max-width: 1150px;
     width: 90%;
@@ -14,29 +27,216 @@
       display: flex;
       font-weight: bold;
       justify-content: space-between;
+      @media (max-width: $breakpoint-lg) {
+        justify-content: center;
+        flex-direction: column;
+        border-top: 1px solid #000;
+        margin: 0;
+      }
 
-      table {
-        color: $blue;
-        background-color: $orange-pale;
+      .table__first {
         th {
-          p {
-            width: 170px;
-            padding: 25px 5px;
-            background-color: $sky_blue;
-            border: 1px solid #333;
+          max-width: 170px;
+        }
+
+        td {
+          padding: 10px;
+          padding-right: 30px;
+          max-width: 360px;
+        }
+      }
+      .table__second {
+        th {
+          max-width: 190px;
+
+          @media (max-width: $breakpoint-lg) {
+            max-width: 170px;
+            width: 140px;
           }
         }
+
         td {
-          width: 300px;
-          padding: 25px 10px;
-          background-color: $white;
-          border: 1px solid #333;
-          p {
-            display: flex;
-            align-items: center;
+          padding: 10px;
+          max-width: 330px;
+          @media (max-width: $breakpoint-lg) {
+            padding-right: 30px;
+          }
+        }
+      }
+      table {
+        color: $blue;
+        border-top: 1px solid black;
+        @media (max-width: $breakpoint-lg) {
+          border-top: 0px solid #000;
+        }
+
+        tr {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-right: 1px solid black;
+          border-left: 1px solid black;
+          background-color: $sky_blue;
+          border-bottom: 1px solid #000;
+
+          .number {
+            padding: 15px 0;
+          }
+
+          th {
+            max-width: 190px;
+            width: 350px;
+            @media (max-width: $breakpoint-lg) {
+              max-width: 170px;
+              width: 140px;
+            }
+
+            p {
+              line-height: 27px;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          td {
+            padding: 10px;
+            width: 65%;
+            border-left: 1px solid #000;
+            background-color: $white;
+
+            p {
+              line-height: 27px;
+              font-size: 16px;
+              display: flex;
+              align-items: center;
+            }
           }
         }
       }
     }
+
+    .banner__caution {
+      padding-top: 40px;
+      padding-left: 50px;
+      @media (max-width: $breakpoint-lg) {
+        padding: 0;
+      }
+    }
+
+    .banner__img {
+      display: flex;
+      justify-content: center;
+      img {
+        margin: 0 auto;
+        max-width: 1150px;
+        width: 90%;
+        margin-top: 40px;
+      }
+    }
+
+    .banner__button {
+      position: relative;
+      font-weight: bold;
+      font-size: 19px;
+      max-width: 750px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      color: $blue;
+      padding: 15px;
+      width: 100%;
+      margin-top: 80px;
+      border-radius: 10px;
+      border: 5px solid $sky_blue;
+
+      //円形
+      &::after {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        width: 25px;
+        height: 25px;
+        content: "";
+        transform: translateY(-15px);
+        border: 3px solid $blue;
+        border-radius: 50%;
+      }
+
+      //三角形
+      &::before {
+        position: absolute;
+        content: "▼";
+        top: 20px;
+        height: 25px;
+        width: 50px;
+        right: 11px;
+        color: $blue;
+      }
+    }
+
+    .banner__button {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
+}
+
+//モーダルウィンドウ
+
+/*infoエリアをはじめは非表示*/
+#info {
+  display: none;
+
+  p {
+    line-height: 26px;
+  }
+}
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container {
+  overflow: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1150px;
+  height: 80%;
+  border-radius: 10px;
+  border: 5px solid $sky_blue;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $sky_blue;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+  width: 2px;
+  background-color: $blue;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #ccc;
+}
+
+.modaal-content-container {
+  line-height: 26px;
+}
+
+.modal-open.banner__button {
+  background-color: $white;
 }

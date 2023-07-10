@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/util.css" />
     <link rel="stylesheet" href="./css/feature.css" />
     <link rel="stylesheet" href="./css/segment.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
 
     <title>Build in HTML</title>
   </head>
@@ -292,6 +293,193 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="banner__inner">
+        <h3 class="title">バナー入稿規定</h3>
+        <div class="table__wrap">
+          <table>
+            <tr>
+              <th>
+                <p>バナー種類</p>
+              </th>
+              <td>
+                <p>
+                  レクタングル <br />
+                  （ダブルサイズ）
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>上下サイズ（pixel）</p>
+              </th>
+              <td>
+                <p>600</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>上下サイズ（pixel）</p>
+              </th>
+              <td>
+                <p>500</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>容量</p>
+              </th>
+              <td>
+                <p>200KB未満</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>クリエイティブ形式</p>
+              </th>
+              <td>
+                <p>
+                  〈入稿形式〉
+                  <br />
+                  ・JPEG・GIFアニメーション
+                  <br />
+                  （無限ループ可能）
+                  <br />
+                  ・1pixel以上の境界線必須（黒色推奨）
+                  <br />
+                  ・広告主名（店舗名）必須
+                </p>
+              </td>
+            </tr>
+            <tabele class="sp-only">
+              <tr>
+                <th>
+                  <p>バナー種類</p>
+                </th>
+                <td>
+                  <p>
+                    レクタングル <br />
+                    （ダブルサイズ）
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>ALTテキスト</p>
+                </th>
+                <td>
+                  <p>不可</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>同時掲載数</p>
+                </th>
+                <td>
+                  <p>2クリエイティブまで</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>入稿</p>
+                </th>
+                <td>
+                  <p>
+                    入稿確定後（メールにてご連絡）7営業日を目安に配信開始します。
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>原稿差し替え</p>
+                </th>
+                <td>
+                  <p>
+                    15時までの入稿の場合は6営業日以内の差し替え。
+                    <br />
+                    15時以降の入稿の場合は7営業日以内の差し替え。
+                  </p>
+                </td>
+              </tr>
+            </tabele>
+          </table>
+          <table class="pc-only">
+            <tr>
+              <th>
+                <p>バナー種類</p>
+              </th>
+              <td>
+                <p>
+                  レクタングル <br />
+                  （ダブルサイズ）
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>ALTテキスト</p>
+              </th>
+              <td>
+                <p>不可</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>同時掲載数</p>
+              </th>
+              <td>
+                <p>2クリエイティブまで</p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>入稿</p>
+              </th>
+              <td>
+                <p>
+                  入稿確定後（メールにてご連絡）7営業日を目安に配信開始します。
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <p>原稿差し替え</p>
+              </th>
+              <td>
+                <p>
+                  15時までの入稿の場合は6営業日以内の差し替え。
+                  <br />
+                  15時以降の入稿の場合は7営業日以内の差し替え。
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p class="banner__caution caution">
+          ※クリエイティブやランディングページの内容によって、媒体側で掲載のお断りをすることがございます。
+          <br />
+          ※配信先毎のクリエイティブ指定、URL指定については対応をしかねますので、あらかじめご了承ください。
+          <br />
+          ※配信にあたっては、「広告掲載規定」を順守していることが前提となります。<br />
+          ※クリエイティブの修正や制作は別途費⽤となります。<br />
+        </p>
+        <div class="banner__img">
+          <img src="../img/regulation-image02.png" alt="" class="pc-only" />
+          <img src="../img/regulation-image01.png" alt="" class="sp-only" />
+        </div>
+        <!--リンク元のHTMLリンク先は表示させたいエリアのid名を指定します。-->
+        <p>
+          <button href="#info" class="modal-open banner__button">
+            広告記載規定
+          </button>
+        </p>
+        <!--表示エリアのHTML。id 名にリンク先と同じ名前を指定します。※表示エリアはHTML の変更が可能なので、レイアウトを自由に変更できます。-->
+        <section id="info">
+          <h2>Sale情報</h2>
+          <p>11 月1 日～ 12 月31 日まで年末セールを開催！</p>
+        </section>
       </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
