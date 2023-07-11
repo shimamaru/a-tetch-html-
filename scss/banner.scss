@@ -21,6 +21,7 @@
     margin: 0 auto;
     max-width: 1150px;
     width: 90%;
+    margin-top: 50px;
 
     .table__wrap {
       margin-top: 50px;
@@ -216,6 +217,8 @@
 
 /*モーダルの横幅を変更したい場合*/
 .modaal-container {
+  background-color: $white;
+  z-index: 3;
   overflow: auto;
   position: fixed;
   top: 50%;
