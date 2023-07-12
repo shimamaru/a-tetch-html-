@@ -40,17 +40,6 @@ header {
         margin-top: 60px;
         padding: 0px;
         height: 100vh;
-
-        .header__item {
-          font-size: $fontsize-m;
-        }
-
-        a {
-          margin: 20px 0;
-          &:nth-child(1) {
-            margin-top: 75px;
-          }
-        }
       }
       display: flex;
       // justify-content: space-between;
@@ -61,31 +50,46 @@ header {
 
       .header__item {
         list-style: none;
-        color: #000;
-
-        font-size: $fontsize-m;
-        font-weight: bold;
         margin-right: 50px;
         padding: 15px 0px;
         @media (max-width: $breakpoint-lg) {
           padding: 0px;
-          color: $white;
+
+          &:nth-child(1) {
+            margin-top: 75px;
+          }
+        }
+
+        .header__link {
+          font-size: 13px;
+          text-decoration: none;
+          list-style: none;
+          color: #000;
+          font-weight: bold;
+
+          @media (max-width: $breakpoint-lg) {
+            color: white;
+            margin: 10px 0;
+            font-size: 15px;
+          }
         }
       }
 
       .header__item__info {
-        color: #fff;
-        background-color: $blue;
-        border-radius: 7px;
-        padding: 15px 40px;
-        @media (max-width: $breakpoint-lg) {
-          padding: 0;
-          color: $black;
-          padding: 20px 0;
-          max-width: 400px;
-          width: 80%;
-          margin: 0 auto;
-          background: $white;
+        margin-right: 0;
+        .header__link {
+          color: #fff;
+          background-color: $blue;
+          border-radius: 7px;
+          padding: 15px 40px;
+          @media (max-width: $breakpoint-lg) {
+            color: $black;
+            padding: 20px 0;
+            max-width: 400px;
+            width: 80%;
+            margin: 0 auto 30px;
+            background: $white;
+          }
         }
       }
     }
@@ -179,10 +183,6 @@ header {
           padding: 0;
           width: 100%;
           transition: 0.4s all;
-
-          // &:last-child {
-          //   padding-bottom: 0;
-          // }
 
           a {
             display: block;

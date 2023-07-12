@@ -39,47 +39,53 @@ header .header__inner .header__list {
     padding: 0px;
     height: 100vh;
   }
-  header .header__inner .header__list .header__item {
-    font-size: 15px;
-  }
-  header .header__inner .header__list a {
-    margin: 20px 0;
-  }
-  header .header__inner .header__list a:nth-child(1) {
-    margin-top: 75px;
-  }
 }
 header .header__inner .header__list a {
   text-decoration: none;
 }
 header .header__inner .header__list .header__item {
   list-style: none;
-  color: #000;
-  font-size: 15px;
-  font-weight: bold;
   margin-right: 50px;
   padding: 15px 0px;
 }
 @media (max-width: 992px) {
   header .header__inner .header__list .header__item {
     padding: 0px;
-    color: #ffffff;
+  }
+  header .header__inner .header__list .header__item:nth-child(1) {
+    margin-top: 75px;
+  }
+}
+header .header__inner .header__list .header__item .header__link {
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  header .header__inner .header__list .header__item .header__link {
+    color: white;
+    margin: 10px 0;
+    font-size: 15px;
   }
 }
 header .header__inner .header__list .header__item__info {
+  margin-right: 0;
+}
+header .header__inner .header__list .header__item__info .header__link {
   color: #fff;
   background-color: #133979;
   border-radius: 7px;
   padding: 15px 40px;
 }
 @media (max-width: 992px) {
-  header .header__inner .header__list .header__item__info {
-    padding: 0;
+  header .header__inner .header__list .header__item__info .header__link {
     color: #000000;
     padding: 20px 0;
     max-width: 400px;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     background: #ffffff;
   }
 }
