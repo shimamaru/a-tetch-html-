@@ -1,0 +1,70 @@
+@import "./variables";
+@import "./setting";
+
+.privacy {
+  padding: 120px 0 50px;
+
+  .privacy__inner {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #000;
+    @media (max-width: $breakpoint-lg) {
+      border: none;
+      width: 95%;
+      padding: 30px 0;
+    }
+
+    h1 {
+      font-size: 28px;
+      @media (max-width: $breakpoint-lg) {
+        font-size: 23px;
+      }
+    }
+
+    h2 {
+      padding: 5px 0 5px 15px;
+      margin: 50px 0 20px;
+      border-left: 4px solid $clay_gray;
+      @media (max-width: $breakpoint-lg) {
+        font-size: 19px;
+        padding: 0 0 0 23px;
+      }
+    }
+
+    div {
+      line-height: 28px;
+
+      .privacy__list {
+        padding-left: 23px;
+        padding-top: 5px;
+        font-size: 15px;
+        @media (max-width: $breakpoint-lg) {
+          font-size: 13px;
+        }
+      }
+    }
+
+    div p:nth-child(2) {
+      padding-bottom: 15px;
+    }
+
+    .privacy__title__01 {
+      border-left: 8px solid $clay_gray;
+      font-size: 23px;
+      line-height: 40px;
+      @media (max-width: $breakpoint-lg) {
+        font-size: 19px;
+        padding: 0 0 0 23px;
+      }
+    }
+
+    .privacy__text {
+      padding-top: 20px;
+      line-height: 27px;
+      @media (max-width: $breakpoint-lg) {
+      }
+    }
+  }
+}
