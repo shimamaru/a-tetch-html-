@@ -1,0 +1,150 @@
+@charset "UTF-8";
+.caution {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 13px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 54px;
+  text-align: center;
+  color: #133979;
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 25px;
+    line-height: 43px;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media (max-width: 992px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: block;
+}
+@media (max-width: 992px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.info {
+  background-color: #133979;
+  padding-bottom: 50px;
+}
+.info .info__inner {
+  padding: 100px 0 40px;
+}
+.info .info__inner .info__title {
+  color: #ffffff;
+}
+.info .form__inner {
+  padding: 10px 0 50px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 750px;
+  border-radius: 10px;
+}
+.info .form__inner .form__item {
+  margin: 0 auto;
+  max-width: 470px;
+  width: 90%;
+  margin-top: 27px;
+}
+.info .form__inner .form__item input,
+.info .form__inner .form__item textarea,
+.info .form__inner .form__item select {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  .info .form__inner .form__item input,
+  .info .form__inner .form__item textarea,
+  .info .form__inner .form__item select {
+    margin: 0;
+  }
+}
+.info .form__inner .form__item .info__content {
+  height: 180px;
+}
+.info .form__inner .info__submmit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.info .form__inner .info__submmit .info__link {
+  margin: 30px auto 0;
+  color: #2f7bff;
+}
+.info .form__inner .info__submmit .info__button {
+  font-size: 16px;
+  max-width: 470px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+  color: #fff;
+  background-color: #133979;
+  border-radius: 7px;
+  padding: 15px 40px;
+  border: none;
+}
+
+select {
+  /* Firefox */
+  -moz-appearance: none;
+  /* Safari and Chrome */
+  -webkit-appearance: none;
+  /* IE10以上 */
+  appearance: none;
+}
+
+.arrow {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  border-radius: 5px;
+  /* 疑似要素を使って右側に矢印を表示 */
+  position: relative;
+}
+
+/* 疑似要素のスタイル */
+.arrow::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.arrow::before {
+  content: "|";
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-55%);
+}
+
+/*# sourceMappingURL=info.css.map */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/info.css" />
+    <title>Build in HTML</title>
+  </head>
+  <body>
+    <section class="info">
+      <div class="info__inner">
+        <h2 class="title info__title">お問い合わせ</h2>
+      </div>
+      <div class="form__inner">
+        <div class="form__item">
+          <p>項目</p>
+          <p class="arrow">
+            <select type="text" placeholder="お問い合わせ">
+              <option value="お申し込み">お申し込み</option>
+              <option value="お問い合わせ">お問い合わせ</option>
+            </select>
+          </p>
+        </div>
+        <div class="form__item">
+          <p>法人名</p>
+          <p><input type="text" placeholder="法人名" /></p>
+        </div>
+        <div class="form__item">
+          <p>お名前（必須）</p>
+          <p><input type="text" placeholder="山田 太郎" /></p>
+        </div>
+        <div class="form__item">
+          <p>店舗名（必須）</p>
+          <p><input type="text" placeholder="店舗名" /></p>
+        </div>
+        <div class="form__item">
+          <p>店舗URL（必須）</p>
+          <p><input type="text" placeholder="URL" /></p>
+        </div>
+        <div class="form__item">
+          <p>メールアドレス（必須）</p>
+          <p><input type="text" placeholder="メールアドレス" /></p>
+        </div>
+        <div class="form__item">
+          <p>電話番号</p>
+          <p><input type="text" placeholder="000-0000-0000" /></p>
+        </div>
+        <div class="form__item">
+          <p>お問い合わせ内容</p>
+          <p>
+            <textarea
+              type="text"
+              class="info__content"
+              placeholder="お問い合わせ内容"
+            >
+            </textarea>
+          </p>
+        </div>
+        <div class="info__submmit">
+          <a href="#" class="info__link">プライバシーポリシーはこちら</a>
+          <button class="info__button">送信</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
