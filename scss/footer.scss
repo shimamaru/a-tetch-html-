@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./setting";
+
+footer {
+  .footer__inner {
+    margin: 10px 0;
+    text-align: center;
+    img {
+      height: 95px;
+      width: auto;
+      margin: 0 auto;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+}
