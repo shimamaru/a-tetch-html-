@@ -9,16 +9,18 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/util.css" />
-    <link rel="stylesheet" href="./css/feature.css" />
-    <link rel="stylesheet" href="./css/segment.css" />
-    <link rel="stylesheet" href="./css/banner.css" />
-    <link rel="stylesheet" href="./css/info.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
 
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/feature.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/header.css.map" />
+    <link rel="stylesheet" href="./css/info.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/privacy.css" />
+    <link rel="stylesheet" href="./css/segment.css" />
+    <link rel="stylesheet" href="./css/util.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <title>Build in HTML</title>
   </head>
   <body>
@@ -419,9 +421,7 @@
           />
         </div>
         <p>
-          <button href="#info" class="modal-open banner__button">
-            広告記載規定
-          </button>
+          <a href="#info" class="modal-open banner__button"> 広告記載規定 </a>
         </p>
         <section id="info">
           <h2 class="title">広告掲載規定</h2>
@@ -480,7 +480,7 @@
         <div class="form__item">
           <p>項目</p>
           <p class="arrow">
-            <select type="text" placeholder="お問い合わせ">
+            <select aria-placeholder="お問い合わせ">
               <option value="お申し込み">お申し込み</option>
               <option value="お問い合わせ">お問い合わせ</option>
             </select>
@@ -513,11 +513,7 @@
         <div class="form__item">
           <p>お問い合わせ内容</p>
           <p>
-            <textarea
-              type="text"
-              class="info__content"
-              placeholder="お問い合わせ内容"
-            >
+            <textarea class="info__content" placeholder="お問い合わせ内容">
             </textarea>
           </p>
         </div>

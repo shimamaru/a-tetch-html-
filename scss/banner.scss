@@ -113,6 +113,8 @@
             width: 65%;
             border-left: 1px solid #000;
             background-color: $white;
+
+            //
             @media (max-width: $breakpoint-lg) {
               max-width: auto;
             }
@@ -158,6 +160,7 @@
     }
 
     .banner__button {
+      width: auto;
       position: relative;
       font-weight: bold;
       font-size: 19px;
@@ -167,10 +170,10 @@
       justify-content: center;
       color: $blue;
       padding: 15px;
-      width: 100%;
       margin-top: 80px;
       border-radius: 10px;
       border: 5px solid $sky_blue;
+      text-decoration: none;
 
       //円形
       &::after {
@@ -189,18 +192,15 @@
       &::before {
         position: absolute;
         content: "▼";
-        top: 20px;
         height: 25px;
         width: 50px;
-        right: 11px;
+        right: -5px;
         color: $blue;
       }
     }
 
-    .banner__button {
-      &:hover {
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
     }
   }
 }

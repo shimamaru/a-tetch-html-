@@ -204,6 +204,7 @@
   width: 100%;
 }
 .banner .banner__inner .banner__button {
+  width: auto;
   position: relative;
   font-weight: bold;
   font-size: 19px;
@@ -213,10 +214,10 @@
   justify-content: center;
   color: #133979;
   padding: 15px;
-  width: 100%;
   margin-top: 80px;
   border-radius: 10px;
   border: 5px solid #e0f4ff;
+  text-decoration: none;
 }
 .banner .banner__inner .banner__button::after {
   position: absolute;
@@ -232,13 +233,12 @@
 .banner .banner__inner .banner__button::before {
   position: absolute;
   content: "▼";
-  top: 20px;
   height: 25px;
   width: 50px;
-  right: 11px;
+  right: -5px;
   color: #133979;
 }
-.banner .banner__inner .banner__button:hover {
+.banner .banner__inner:hover {
   cursor: pointer;
 }
 

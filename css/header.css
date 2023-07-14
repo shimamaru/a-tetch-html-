@@ -1,8 +1,9 @@
-@charset "UTF-8";
 header {
+  max-width: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -135,7 +136,8 @@ header .header__inner .header__list .header__item__info .header__link {
     transform: rotate(-45deg);
     left: 15px;
   }
-  header .header__inner .hamburger.active span:nth-child(2), header .header__inner .hamburger.active span:nth-child(3) {
+  header .header__inner .hamburger.active span:nth-child(2),
+  header .header__inner .hamburger.active span:nth-child(3) {
     top: 27.5px;
     background: #fff;
     transform: rotate(45deg);

@@ -54,7 +54,7 @@
         width: 280px;
         top: -110px;
         left: 23%;
-        overflow: hidden; /* コンテナー外の画像を隠す */
+        overflow: hidden;
         @media (max-width: $breakpoint-lg) {
           right: 0;
           left: unset;
@@ -66,9 +66,7 @@
     .main__visual_image_2 {
       img {
         width: 750px;
-        top: 30%;
-        right: -20px;
-        overflow: hidden; /* コンテナー外の画像を隠す */
+        right: 0px;
         @media (max-width: $breakpoint-lg) {
           max-width: 500px;
           width: 100%;
@@ -81,7 +79,7 @@
         max-width: 500px;
         left: -50px;
         top: 600px;
-        overflow: hidden; /* コンテナー外の画像を隠す */
+        overflow: hidden;
       }
     }
     .main__text {
